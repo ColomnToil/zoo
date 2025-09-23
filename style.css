@@ -1,3 +1,17 @@
 :root{
-    
+     --text-color:white;
+    --text-shadow-color:black;
+    --button-bg-color:rgba(230,230,230,1);
+}
+
+.curs{
+    font-size: 32px;
+}
+
+header{
+
+}
+
+header .logo{
+    width: 220px;
 }
