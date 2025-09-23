@@ -1,9 +1,87 @@
-:root {
+:root{
+     --text-color:white;
+    --text-shadow-color:black;
+    --button-bg-color:rgba(230,230,230,1);
     --primary-color: #2c3e50;
     --secondary-color: #2fff00;
 }
 
-.otzivi-section {
+.curs{
+    font-size: 32px;
+}
+
+header{
+
+}
+
+header .logo{
+    width: 220px;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    height: 340px;
+}
+
+.slider .arrow{
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 45%;
+    font-size: 64px;
+    background-color: var(--button-bg-color);
+    margin: 0px 32px;
+}
+
+.slide{
+    width: 680px;
+    height: 340px;
+    background-image: url("image/SYketSiveYo6JvfRfurQC04VAxBocTX8mYdfOS8Xp1Gj5pqKzWTJSFS-PsArI08gRZaK1yZktQXWesHOaOz7FWcJ5xZMng=erwHrfmO4N16n0aGJiG4KQ.jpg");
+    background-repeat: no-repeat;
+    background-size: 680px;
+    font-size: 22px;
+    color: var(--text-color);
+    justify-content: center;
+    text-align: end;
+    align-content: center;
+    border-radius: 10px;
+    
+
+    p{
+        text-shadow: 2px 2px 1px var(--text-shadow-color);
+        margin: 10px;
+    }
+}
+ .animals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-auto-rows: 150px;
+    gap: 15px;
+  }
+  .animal-card {
+    background: #d9f0ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  .animal-card.size-large {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .animal-card.size-medium {
+    grid-row: span 2;
+  }
+  .otzivi-section {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
