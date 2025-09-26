@@ -3,6 +3,7 @@
   --text-shadow-color: black;
   --button-bg-color: rgba(230, 230, 230, 1);
   --primary-color: #2c3e50;
+  --background-color: #4187cc;
   --secondary-color: #2fff00;
 }
 
@@ -15,11 +16,51 @@ h2 {
   font-size: 32px;
 }
 
+body {
+  font-family: sans-serif;
+  background-color: #e6e6e6;
+}
+
 header {
+  background-color: #a7a7a7;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 header .logo {
-  width: 220px;
+  width: 180px;
+  height: auto;
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .slider {
@@ -43,7 +84,8 @@ header .logo {
 .slide {
   width: 680px;
   height: 340px;
-  background-image: url("image/SYketSiveYo6JvfRfurQC04VAxBocTX8mYdfOS8Xp1Gj5pqKzWTJSFS-PsArI08gRZaK1yZktQXWesHOaOz7FWcJ5xZMng=erwHrfmO4N16n0aGJiG4KQ.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("image/SYketSiveYo6JvfRfurQC04VAxBocTX8mYdfOS8Xp1Gj5pqKzWTJSFS-PsArI08gRZaK1yZktQXWesHOaOz7FWcJ5xZMng=erwHrfmO4N16n0aGJiG4KQ.jpg");
   background-repeat: no-repeat;
   background-size: 680px;
   font-size: 22px;
@@ -54,8 +96,16 @@ header .logo {
   border-radius: 10px;
 
   p {
-    text-shadow: 2px 2px 1px var(--text-shadow-color);
-    margin: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .curs {
+    font-size: 40px;
+    color: #ff17cd;
+    font-weight: 700;
   }
 }
 .animals-grid {
@@ -76,6 +126,7 @@ header .logo {
   padding: 10px;
   text-align: center;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
 }
 .animal-card.size-large {
   grid-row: span 2;
@@ -92,49 +143,41 @@ header .logo {
 
 .l {
   background-image: url("image/лев.jpg");
-  background-repeat: no-repeat;
   background-size: 370px;
   background-position-y: center;
 }
 
 .t {
   background-image: url("image/тигр.jpg");
-  background-repeat: no-repeat;
   background-size: 370px;
-    background-position-y: -30px;
+  background-position-y: -30px;
 }
 .m {
   background-image: url("image/обз.jpg");
-  background-repeat: no-repeat;
   background-size: 600px;
   background-position-x: center;
 }
 .j {
   background-image: url("image/жирафы.jpg");
-  background-repeat: no-repeat;
   background-size: 370px;
 }
 .z {
   background-image: url("image/зебра.jpg");
-  background-repeat: no-repeat;
   background-size: 500px;
   background-position-x: center;
 }
 .k {
   background-image: url("image/крок.jpeg");
-  background-repeat: no-repeat;
   background-size: 700px;
   background-position-x: -270px;
 }
 .p {
   background-image: url("image/пин.jpg");
-  background-repeat: no-repeat;
   background-size: 600px;
   background-position-x: center;
 }
 .e {
   background-image: url("image/слон.jpg");
-  background-repeat: no-repeat;
   background-size: 500px;
   background-position-x: center;
 }
@@ -206,9 +249,11 @@ header .logo {
 }
 
 .footer {
-  background-color: var(--primary-color);
+  background-color: #a7a7a7;
   color: white;
   padding: 40px 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .footer-container {
@@ -232,7 +277,7 @@ header .logo {
 }
 
 .map-placeholder {
-  background-color: #34495e;
+  background-color: #a7a7a7;
   height: 250px;
   border-radius: 8px;
   display: flex;
@@ -251,7 +296,7 @@ header .logo {
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 14px;
-  color: #bdc3c7;
+  color: black;
 }
 
 .employees {
