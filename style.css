@@ -173,7 +173,7 @@ header .logo{
 .footer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 30px;
 }
 
@@ -222,3 +222,18 @@ header .logo{
 }
 
 
+.contact-section{
+    padding: 0px 15px;
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+    justify-content: right;
+    justify-items: right;
+    align-self: center;
+    p{
+        text-align: right;
+        font-size: 18px;
+        color: var(--button-bg-color);
+    }
+}
