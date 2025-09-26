@@ -77,7 +77,7 @@ header .logo {
   align-self: center;
   border-radius: 45%;
   font-size: 64px;
-  background-color: var(--button-bg-color);
+  background-color: #7f8081;
   margin: 0px 32px;
 }
 
@@ -207,8 +207,28 @@ header .logo {
 }
 
 .otzivi-section .slider-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.otzivi-section .slider-container img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}
+
+.otzivi-section .slider-container img:hover {
+    transform: scale(1.1);
+    background-color: #7f8081;
+}
+
+.otzivi-section .slider-container img:active {
+    transform: scale(0.95);
 }
 
 .otzivi-section .slide {
@@ -277,18 +297,16 @@ header .logo {
 }
 
 .map-placeholder {
-  background-color: #a7a7a7;
-  height: 250px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid ;
+    border-color: #303235;
 }
 
-.map-placeholder p {
-  color: #ecf0f1;
-  font-size: 18px;
+.map-placeholder iframe,
+.map-placeholder img {
+    display: block;
+    border: none;
 }
 
 .copyright {
@@ -296,7 +314,7 @@ header .logo {
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 14px;
-  color: black;
+  color: white;
 }
 
 .employees {
@@ -325,6 +343,6 @@ header .logo {
   p {
     text-align: right;
     font-size: 18px;
-    color: var(--button-bg-color);
+    color: white;
   }
 }
