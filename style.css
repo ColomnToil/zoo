@@ -321,8 +321,9 @@ header .logo {
 
 .employees {
   display: grid;
+  justify-content: center;
   grid-template-columns: 312px 312px 312px;
-  grid-template-rows: 312px 312px 312px;
+  grid-template-rows: 250px 312px ;
 }
 
 .employees .employee-card {
